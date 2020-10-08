@@ -65,6 +65,7 @@ heroDiv.appendChild(introDiv);
 let myH1 = document.createElement("H1");
 introDiv.appendChild(myH1);
 
+// H1 CONTAINER
 let H1SpanOne = document.createElement("span");
 let H1SpanTwo = document.createElement("span")
 let H1SpanThree = document.createElement("span")
@@ -79,6 +80,26 @@ h1Paragrapher.innerHTML = "Where the beer is served colder than your ex's heart"
 introDiv.appendChild(h1Paragrapher);
 
 
+// ABOUT HEADING
+let aboutHeadingDiv = document.createElement("div");
+aboutHeadingDiv.setAttribute("class", "containerHeading");
+
+let aboutHeading = document.createElement("h2");
+aboutHeading.innerHTML = "about";
+aboutHeadingDiv.appendChild(aboutHeading);
+
+// ABOUT CONTAINER
+let aboutContainer = document.createElement("div");
+aboutContainer.setAttribute("class", "containerAbout")
+
+let aboutContainerText = document.createElement("p");
+aboutContainerText.innerHTML = 'Quoting the best US president in history, Abraham Lincoln "I am a firm believer in the people. If given the truth, they can be depended upon to meet any national crisis. The great point is to bring them the real facts, and beer.” This is one of the main reasons Henrique Peroni created Charlie Brew Brewery in 2032, because as  Mr.s Lincoln, Henrique does believe in people, and in the middle of the chaos, a cold pint of beer can help solve the problems, or at least make you forget then for a while.'
+
+aboutContainer.appendChild(aboutContainerText);
+
+
 // APPEDING DIVS
 document.body.appendChild(navBar);
 document.body.appendChild(heroDiv);
+document.body.appendChild(aboutHeadingDiv);
+document.body.appendChild(aboutContainer);
