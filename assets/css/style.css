@@ -1,3 +1,37 @@
-ul {
-    color:red
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+#navbar-container {
+    background-color: rgb(73 73 82);
+    width: 100vw; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar-container ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-container ul li {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+#navbar-container ul li a{
+    text-decoration: none;
+    color: #fafafa;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+#navbar-container ul li a img{
+    height: 60px;
+    padding: 0;
+    border-radius: 50%;
+    align-items: center;
 }
