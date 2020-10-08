@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*-----------------------------NAVBAR-----------*/
 
 #navbar-container {
     background-color: rgb(73 73 82);
-    width: 100vw; 
-    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 7vh;
 }
 
 #navbar-container ul {
@@ -55,23 +56,32 @@
     -o-background-size: cover;
     background-blend-mode: overlay;
 	position: relative;
-    height: 100vh;
+    height: 93vh;
     opacity: 0.85;
 }
 
-#hero-img h1 {
-    background: url("../images/beer-bg.png");
-    background-position: center;
-    background-size: cover;
+#hero-intro {
     display: inline-block;
-    opacity: 0.8;
-    padding: 30px;
+    background: url(../images/beer-bg.png);
+    background-position: center;
+    background-size: contain;
+    max-width: 320px;
+    padding: 100px 30px;
     bottom: 30px;
     left: 150px;
-
-  position: absolute;
+    position: absolute;
+    border-radius: 2px;
+    opacity: 0.8;
+    text-shadow: 2px 2px 11px rgba(0,0,0,0.40)
 }
 
 #hero-img h1 span{
     display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+p {
+    font-weight: 700;
 }

@@ -56,9 +56,14 @@ navBar.appendChild(navBarUL);
 let heroDiv = document.createElement("div");
 heroDiv.setAttribute("id", "hero-img")
 
+//H1 DIV
+let introDiv = document.createElement("div");
+introDiv.setAttribute("id", "hero-intro");
+heroDiv.appendChild(introDiv);
+
 // H1
 let myH1 = document.createElement("H1");
-heroDiv.appendChild(myH1);
+introDiv.appendChild(myH1);
 
 let H1SpanOne = document.createElement("span");
 let H1SpanTwo = document.createElement("span")
@@ -68,9 +73,12 @@ myH1.appendChild(H1SpanTwo);
 myH1.appendChild(H1SpanThree);
 H1SpanOne.innerHTML = "Welcome"
 H1SpanTwo.innerHTML = "to the"
-H1SpanThree.innerHTML = "Charlie Brew Brewery"
+H1SpanThree.innerHTML = "Charlie Brew"
+let h1Paragrapher = document.createElement("p");
+h1Paragrapher.innerHTML = "Where the beer is served colder than your ex's heart"
+introDiv.appendChild(h1Paragrapher);
 
 
 // APPEDING DIVS
 document.body.appendChild(navBar);
-document.body.appendChild(heroDiv)
+document.body.appendChild(heroDiv);
