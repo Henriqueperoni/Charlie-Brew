@@ -120,17 +120,56 @@ let pubImage = document.createElement("img");
 pubImage.src = "assets/images/pub-inside.png";
 pubImageDiv.appendChild(pubImage);
 
+// PUB
 let pubTextDiv = document.createElement("div");
 pubTextDiv.setAttribute("class", "aboutContent");
 containerHistory.appendChild(pubTextDiv);
-let pubImageDivH3 = document.createElement("h3");
-pubImageDivH3.innerHTML = "pub";
-pubTextDiv.appendChild(pubImageDivH3);
-let pubImageDivParagrapher = document.createElement("p");
-pubImageDivParagrapher.innerHTML = "hfdisjdifodsjfodmsofidj ofj odo ofi doifj oijf dj ojdo jfoid jfoidjoif dsodi osdjfodjofjdoi ojdiojdiosjiodjfo sdoif odijf oisdj ifo";
-pubTextDiv.appendChild(pubImageDivParagrapher);
+let pubTextDivH3 = document.createElement("h3")
+pubTextDivH3.innerHTML = "Pub";
+pubTextDiv.appendChild(pubTextDivH3);
+let pubTextDivParagrapher = document.createElement("p");
+pubTextDivParagrapher.innerHTML = "hfdisjdifodsjfodmsofidj ofj odo ofi doifj oijf dj ojdo jfoid jfoidjoif dsodi osdjfodjofjdoi ojdiojdiosjiodjfo sdoif odijf oisdj ifo";
+pubTextDiv.appendChild(pubTextDivParagrapher);
+
+// BEER GARDEN 
+let beerGardenTextDiv = document.createElement("div");
+beerGardenTextDiv.setAttribute("class", "aboutContent");
+containerHistory.appendChild(beerGardenTextDiv);
+let beerGardenTextDivH3 = document.createElement("h3")
+beerGardenTextDivH3.innerHTML = "Beer Garden";
+beerGardenTextDiv.appendChild(beerGardenTextDivH3);
+let beerGardenTextDivParagrapher = document.createElement("p");
+beerGardenTextDivParagrapher.innerHTML = "494984 984 984 94 9849 8498 498 4894 894 984 984 984 94 94 94 984 94 94984984 984 94 949 8498 49 49 498 4984 9 4984 94 498 ";
+beerGardenTextDiv.appendChild(beerGardenTextDivParagrapher);
 
 
+let beerGardenImageDiv = document.createElement("div");
+beerGardenImageDiv.setAttribute("class", "aboutContent");
+containerHistory.appendChild(beerGardenImageDiv)
+let beerGardenImage = document.createElement("img");
+beerGardenImage.src = "assets/images/beer-garden.png";
+beerGardenImageDiv.appendChild(beerGardenImage);
+
+
+//OUR PEOPLE
+
+let ourPeopleImageDiv = document.createElement("div");
+ourPeopleImageDiv.setAttribute("class", "aboutContent");
+containerHistory.appendChild(ourPeopleImageDiv)
+let ourPeopleImage = document.createElement("img");
+ourPeopleImage.src = "assets/images/our-people.png";
+ourPeopleImageDiv.appendChild(ourPeopleImage);
+
+
+let ourPeopleTextDiv = document.createElement("div");
+ourPeopleTextDiv.setAttribute("class", "aboutContent");
+containerHistory.appendChild(ourPeopleTextDiv);
+let ourPeopleTextDivH3 = document.createElement("h3")
+ourPeopleTextDivH3.innerHTML = "Pub";
+ourPeopleTextDiv.appendChild(ourPeopleTextDivH3);
+let ourPeopleTextDivParagrapher = document.createElement("p");
+ourPeopleTextDivParagrapher.innerHTML = "hfdisjdifodsjfodmsofidj ofj odo ofi doifj oijf dj ojdo jfoid jfoidjoif dsodi osdjfodjofjdoi ojdiojdiosjiodjfo sdoif odijf oisdj ifo";
+ourPeopleTextDiv.appendChild(ourPeopleTextDivParagrapher);
 
 
 

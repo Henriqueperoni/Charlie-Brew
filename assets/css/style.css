@@ -118,14 +118,23 @@ h2 {
 .aboutHistory {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .aboutContent {
-    max-width: 350px;
-    height: auto;
+    width: 350px;
+    margin: 30px 70px;
+    color:#F6AE2D;
 }
 
 .aboutContent img{
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px 10px rgba(255,255,255,0.05);
+}
+
+.aboutContent h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
 }
