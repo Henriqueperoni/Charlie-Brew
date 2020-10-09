@@ -85,7 +85,7 @@
 
 
 /*-----------------------------ABOUT-----------*/
-.containerHeading, .containerAbout {
+.containerHeading, .containerAbout, .containerbeer {
     max-width: 1140px;
     margin: 0 auto;
     justify-content: center;
@@ -99,14 +99,16 @@ h2 {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 3px;
     padding: 15px 0;
     color: #F6AE2D;
 }
 
 .aboutText {
-    padding: 50px;
+    max-width: 940px;
+    padding:50px 0;
+    margin: 0 auto;
     color: #F6AE2D;
     font-weight: 500;
 }
@@ -142,5 +144,15 @@ h2 {
 
 .aboutContent p {
     justify-content: center;
+    font-weight: 500;
+}
+
+/*-----------------------------BEERS-----------*/
+
+.containerbeer p {
+    max-width: 940px;
+    padding:50px 0;
+    margin: 0 auto;
+    color: #F6AE2D;
     font-weight: 500;
 }

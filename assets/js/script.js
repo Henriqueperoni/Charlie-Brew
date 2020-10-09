@@ -172,6 +172,25 @@ ourPeopleTextDivParagrapher.innerHTML = 'At Charlie Brew, we use to say that our
 ourPeopleTextDiv.appendChild(ourPeopleTextDivParagrapher);
 
 
+// BEERS
+//BEERS HEADING
+let beerHeadingDiv = document.createElement("div");
+beerHeadingDiv.setAttribute("class", "containerHeading")
+
+let beerHeading = document.createElement("h2");
+beerHeading.innerHTML = "beers";
+beerHeadingDiv.appendChild(beerHeading);
+
+//BEERS CONTAINER
+let beerContainer = document.createElement("div");
+beerContainer.setAttribute("class", "containerbeer")
+
+//BEERS PARAGRAPHER
+let beersParagrapher = document.createElement("p")
+beersParagrapher.innerHTML = 'We already talk a lot about how things work at Charlie Brew. Now it is time to talk about what really interests us, BEER. After all, everybody here agrees with the actor Jack Nicholson, "Beer, it’s the best damn drink in the world."'
+beerContainer.appendChild(beersParagrapher);
+
+
 
 
 // APPEDING DIVS
@@ -179,3 +198,5 @@ document.body.appendChild(navBar);
 document.body.appendChild(heroDiv);
 document.body.appendChild(aboutHeadingDiv);
 document.body.appendChild(aboutContainer);
+document.body.appendChild(beerHeadingDiv);
+document.body.appendChild(beerContainer);
