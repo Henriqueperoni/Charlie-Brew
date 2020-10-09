@@ -10,7 +10,7 @@
 /*-----------------------------NAVBAR-----------*/
 
 #navbar-container {
-    background-color: rgb(73 73 82);
+    background-color: #2F4858;
     overflow: hidden;
     height: 7vh;
 }
@@ -72,21 +72,19 @@
     position: absolute;
     border-radius: 70px 70px 5px 5px;
     text-shadow: 7px 7px 13px rgba(255,255,255,0.80);
+    opacity: 0.75;
+    font-weight: 700;
 }
 
 #hero-img h1 span{
     display: block;
     text-transform: uppercase;
-    font-weight: 700;
-    
-}
-
-p {
-    font-weight: 700;
 }
 
 
-/*-----------------------------HERO IMAGE-----------*/
+
+
+/*-----------------------------ABOUT-----------*/
 .containerHeading, .containerAbout {
     max-width: 1140px;
     margin: 0 auto;
@@ -107,10 +105,27 @@ h2 {
     color: #F6AE2D;
 }
 
-
-.containerAbout p{
+.aboutText {
     padding: 50px;
     color: #F6AE2D;
     font-weight: 400;
 }
 
+.aboutText p {
+    padding-top: 10px;
+}
+
+.aboutHistory {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutContent {
+    max-width: 350px;
+    height: auto;
+}
+
+.aboutContent img{
+    max-width: 100%;
+    height: auto;
+}
