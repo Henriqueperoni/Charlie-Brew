@@ -108,7 +108,7 @@ h2 {
 .aboutText {
     padding: 50px;
     color: #F6AE2D;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .aboutText p {
@@ -124,7 +124,7 @@ h2 {
 .aboutContent {
     width: 350px;
     margin: 30px 70px;
-    color:#F6AE2D;
+    color: #F6AE2D;
 }
 
 .aboutContent img{
@@ -137,4 +137,10 @@ h2 {
 .aboutContent h3 {
     font-size: 30px;
     padding-bottom: 10px;
+    z-index: 1;
+}
+
+.aboutContent p {
+    justify-content: center;
+    font-weight: 500;
 }

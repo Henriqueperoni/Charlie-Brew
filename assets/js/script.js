@@ -128,7 +128,7 @@ let pubTextDivH3 = document.createElement("h3")
 pubTextDivH3.innerHTML = "Pub";
 pubTextDiv.appendChild(pubTextDivH3);
 let pubTextDivParagrapher = document.createElement("p");
-pubTextDivParagrapher.innerHTML = "hfdisjdifodsjfodmsofidj ofj odo ofi doifj oijf dj ojdo jfoid jfoidjoif dsodi osdjfodjofjdoi ojdiojdiosjiodjfo sdoif odijf oisdj ifo";
+pubTextDivParagrapher.innerHTML = "Charlie Brew Pub is located in front of the Barra da Lagoa, which gives the pub an amazing view with a stunning sunset every day. The pub was carefully built to give comfort to the customer, and at the same time make them feel they're at home and inside a brewery. Everything was thought to make every visit unique and unforgettable. Pop in to share one of these moments with us.";
 pubTextDiv.appendChild(pubTextDivParagrapher);
 
 // BEER GARDEN 
@@ -139,7 +139,7 @@ let beerGardenTextDivH3 = document.createElement("h3")
 beerGardenTextDivH3.innerHTML = "Beer Garden";
 beerGardenTextDiv.appendChild(beerGardenTextDivH3);
 let beerGardenTextDivParagrapher = document.createElement("p");
-beerGardenTextDivParagrapher.innerHTML = "494984 984 984 94 9849 8498 498 4894 894 984 984 984 94 94 94 984 94 94984984 984 94 949 8498 49 49 498 4984 9 4984 94 498 ";
+beerGardenTextDivParagrapher.innerHTML = "The Beer Garden was design thinking about how important is to keep in touch with nature. With simplicity and elegance, while you relish a tasty pint you can enjoy the moon and stars. And don't be afraid of bring your pet with you, we will more than happy to serve than as well.";
 beerGardenTextDiv.appendChild(beerGardenTextDivParagrapher);
 
 
@@ -165,10 +165,10 @@ let ourPeopleTextDiv = document.createElement("div");
 ourPeopleTextDiv.setAttribute("class", "aboutContent");
 containerHistory.appendChild(ourPeopleTextDiv);
 let ourPeopleTextDivH3 = document.createElement("h3")
-ourPeopleTextDivH3.innerHTML = "Pub";
+ourPeopleTextDivH3.innerHTML = "Our People";
 ourPeopleTextDiv.appendChild(ourPeopleTextDivH3);
 let ourPeopleTextDivParagrapher = document.createElement("p");
-ourPeopleTextDivParagrapher.innerHTML = "hfdisjdifodsjfodmsofidj ofj odo ofi doifj oijf dj ojdo jfoid jfoidjoif dsodi osdjfodjofjdoi ojdiojdiosjiodjfo sdoif odijf oisdj ifo";
+ourPeopleTextDivParagrapher.innerHTML = 'At Charlie Brew, we use to say that our people are our big asset. Most of the place says "the customer comes first". Not in here, at Charlie Brew, the people come first, our people. With that in mind we build teams with trust, support and communication every employee knows that someone has their back. So they felling safe, they can deliver the best customer service.';
 ourPeopleTextDiv.appendChild(ourPeopleTextDivParagrapher);
 
 
