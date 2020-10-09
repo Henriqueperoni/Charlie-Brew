@@ -62,7 +62,7 @@
 
 #hero-intro {
     display: inline-block;
-    background: url(../images/beer-bg.png);
+    background: url(../images/beer-bg1.png);
     background-position: center;
     background-size: contain;
     max-width: 320px;
@@ -72,7 +72,6 @@
     position: absolute;
     border-radius: 70px 70px 5px 5px;
     text-shadow: 7px 7px 13px rgba(255,255,255,0.80);
-    opacity: 0.75;
     font-weight: 700;
 }
 
@@ -156,3 +155,25 @@ h2 {
     color: #F6AE2D;
     font-weight: 500;
 }
+
+.buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnDiv {
+    justify-content: center;
+}
+
+.btn {
+    border: 15px solid #F6AE2D;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 150px;
+    box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1)
+}
+
+#redAleDiv {
+    border: 15px solid rgb(215, 38, 56);
+}
+

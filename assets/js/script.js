@@ -190,6 +190,66 @@ let beersParagrapher = document.createElement("p")
 beersParagrapher.innerHTML = 'We already talk a lot about how things work at Charlie Brew. Now it is time to talk about what really interests us, BEER. After all, everybody here agrees with the actor Jack Nicholson, "Beer, it’s the best damn drink in the world."'
 beerContainer.appendChild(beersParagrapher);
 
+//BEER BUTTOMS CONTAINER
+
+let beerButtonsContainer = document.createElement("div");
+beerButtonsContainer.setAttribute("class", "buttonsContainer");
+beerContainer.appendChild(beerButtonsContainer);
+
+
+// LAGER CONTAINER
+let lagerDiv = document.createElement("div");
+lagerDiv.setAttribute("class", "btnDiv");
+lagerDiv.setAttribute("id", "lagerDiv");
+beerButtonsContainer.appendChild(lagerDiv);
+
+let btnLager = document.createElement("img");
+btnLager.setAttribute("class", "btn");
+btnLager.src = "assets/images/lager.png"
+lagerDiv.appendChild(btnLager)
+
+let h3lager = document.createElement("h3");
+h3lager.innerHTML = "Lager"
+lagerDiv.appendChild(h3lager);
+
+// RED ALE CONTAINER
+let redAleDiv = document.createElement("div");
+redAleDiv.setAttribute("class", "btnDiv");
+redAleDiv.setAttribute("id", "redAleDiv");
+beerButtonsContainer.appendChild(redAleDiv);
+
+let btnRedAle = document.createElement("img");
+btnRedAle.setAttribute("class", "btn");
+btnRedAle.src = "assets/images/red-ale.png"
+redAleDiv.appendChild(btnRedAle)
+
+let h3RedAle = document.createElement("h3");
+h3RedAle.innerHTML = "Red Ale"
+redAleDiv.appendChild(h3RedAle);
+
+// IPA CONTAINER
+let ipaDiv = document.createElement("div");
+ipaDiv.setAttribute("class", "btnDiv");
+ipaDiv.setAttribute("id", "ipaDiv");
+beerButtonsContainer.appendChild(ipaDiv);
+
+let btnIpa = document.createElement("img");
+btnIpa.setAttribute("class", "btn");
+btnIpa.src = "assets/images/ipa.png"
+ipaDiv.appendChild(btnIpa)
+
+let h3Ipa = document.createElement("h3");
+h3Ipa.innerHTML = "IPA"
+ipaDiv.appendChild(h3Ipa);
+
+
+
+
+
+
+
+
+
 
 
 
