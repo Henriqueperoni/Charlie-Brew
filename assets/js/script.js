@@ -219,7 +219,8 @@ redAleDiv.setAttribute("id", "redAleDiv");
 beerButtonsContainer.appendChild(redAleDiv);
 
 let btnRedAle = document.createElement("img");
-btnRedAle.setAttribute("class", "btn");
+btnRedAle.setAttribute("class", "btn redBorder");
+btnRedAle.setAttribute("id", "buttomRedAle")
 btnRedAle.src = "assets/images/red-ale.png"
 redAleDiv.appendChild(btnRedAle)
 
@@ -235,12 +236,93 @@ beerButtonsContainer.appendChild(ipaDiv);
 
 let btnIpa = document.createElement("img");
 btnIpa.setAttribute("class", "btn");
+btnIpa.setAttribute("id", "buttomIpa")
 btnIpa.src = "assets/images/ipa.png"
 ipaDiv.appendChild(btnIpa)
 
 let h3Ipa = document.createElement("h3");
 h3Ipa.innerHTML = "IPA"
 ipaDiv.appendChild(h3Ipa);
+
+
+// SHOW UP BEERS
+// GENERAL CONTAINER
+let showUpDiv = document.createElement("div");
+showUpDiv.setAttribute("class", "showUpDiv");
+beerContainer.appendChild(showUpDiv);
+
+// LAGER
+let lagerShowUpDiv = document.createElement("div");
+lagerShowUpDiv.setAttribute("class", "beersShowUpDiv");
+lagerShowUpDiv.setAttribute("id", "lagerShowUpDiv");
+showUpDiv.appendChild(lagerShowUpDiv);
+
+
+// IMAGE
+let lagerImageShowUpDiv = document.createElement("div");
+lagerImageShowUpDiv.setAttribute("class", "imageShowUpDiv showUpElement");
+lagerShowUpDiv.appendChild(lagerImageShowUpDiv);
+let lagerImageShowUp = document.createElement("img");
+lagerImageShowUp.src = "assets/images/lager.png"
+lagerImageShowUpDiv.appendChild(lagerImageShowUp);
+
+// TEXT
+let lagerTextShowUpDiv = document.createElement("div");
+lagerTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
+let = lagerParagrapherShowup = document.createElement("p");
+lagerParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+lagerTextShowUpDiv.appendChild(lagerParagrapherShowup);
+lagerShowUpDiv.appendChild(lagerTextShowUpDiv);
+
+// RED ALE
+let redAleShowUpDiv = document.createElement("div");
+redAleShowUpDiv.setAttribute("class", "beersShowUpDiv");
+redAleShowUpDiv.setAttribute("id", "redAleShowUpDiv");
+showUpDiv.appendChild(redAleShowUpDiv);
+
+
+// IMAGE
+let redAleImageShowUpDiv = document.createElement("div");
+redAleImageShowUpDiv.setAttribute("class", "imageShowUpDiv showUpElement");
+redAleShowUpDiv.appendChild(redAleImageShowUpDiv);
+let redAleImageShowUp = document.createElement("img");
+redAleImageShowUp.setAttribute("class", "redBorder");
+redAleImageShowUp.src = "assets/images/red-ale.png"
+redAleImageShowUpDiv.appendChild(redAleImageShowUp);
+
+// TEXT
+let redAleTextShowUpDiv = document.createElement("div");
+redAleTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
+let = redAleParagrapherShowup = document.createElement("p");
+redAleParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+redAleTextShowUpDiv.appendChild(redAleParagrapherShowup);
+redAleShowUpDiv.appendChild(redAleTextShowUpDiv);
+
+// IPA
+let ipaShowUpDiv = document.createElement("div");
+ipaShowUpDiv.setAttribute("class", "beersShowUpDiv");
+ipaShowUpDiv.setAttribute("id", "lagerShowUpDiv");
+showUpDiv.appendChild(ipaShowUpDiv);
+
+
+// IMAGE
+let ipaImageShowUpDiv = document.createElement("div");
+ipaImageShowUpDiv.setAttribute("class", "imageShowUpDiv showUpElement");
+ipaShowUpDiv.appendChild(ipaImageShowUpDiv);
+let ipaImageShowUp = document.createElement("img");
+ipaImageShowUp.src = "assets/images/ipa.png"
+ipaImageShowUpDiv.appendChild(ipaImageShowUp);
+
+// TEXT
+let ipaTextShowUpDiv = document.createElement("div");
+ipaTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
+let = ipaParagrapherShowup = document.createElement("p");
+ipaParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+ipaTextShowUpDiv.appendChild(ipaParagrapherShowup);
+ipaShowUpDiv.appendChild(ipaTextShowUpDiv);
+
+
+
 
 
 

@@ -159,21 +159,55 @@ h2 {
 .buttonsContainer {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
-.btnDiv {
+.btnDiv h3{
+    display: flex;
     justify-content: center;
+    color: #F6AE2D;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .btn {
-    border: 15px solid #F6AE2D;
+    border: 15px solid #ffa400;
     border-radius: 50%;
     cursor: pointer;
     height: 150px;
     box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1)
 }
 
-#redAleDiv {
-    border: 15px solid rgb(215, 38, 56);
+.redBorder {
+    border: 15px solid #6E0E0A !important;
 }
+
+.beersShowUpDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.showUpElement {
+    margin: 30px 80px;
+}
+
+.imageShowUpDiv img {
+    border-radius: 50%;
+    border: 15px solid #ffa400;
+    box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1);
+    height: 350px;
+    width: 350px
+}
+
+.textShowUpDiv {
+    max-width: 350px;
+    height: auto;
+    align-self: center;
+}
+
+.textShowUpDiv p {
+    padding: 0;
+}
+
+
 
