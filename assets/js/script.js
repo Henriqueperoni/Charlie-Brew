@@ -25,7 +25,7 @@ let logoItem = document.createElement("li");
 let logoAnchor = document.createElement('a');
 aboutAnchor.setAttribute('href',"http://www.google.com.br");
 let navBarImg = document.createElement("img");
-navBarImg.src = "assets/images/logo.png"
+navBarImg.src = "assets/images/logo2.png"
 logoAnchor.appendChild(navBarImg);
 logoItem.appendChild(logoAnchor);
 navBarUL.appendChild(logoItem);
@@ -328,6 +328,10 @@ let footerDiv = document.createElement("div");
 footerDiv.setAttribute("class", "footerDiv");
 footer.appendChild(footerDiv);
 
+let social = document.createElement("div");
+social.setAttribute("class", "social");
+footer.appendChild(social)
+
 // UNORDER LIST
 let footerList = document.createElement("ul");
 footerDiv.appendChild(footerList);
@@ -335,8 +339,10 @@ footerDiv.appendChild(footerList);
 //FACEBOOK
 let facebookItem = document.createElement("li");
 let facebookAnchor = document.createElement("a");
+facebookAnchor.setAttribute("href", "http://www.facebook.com.br")
+facebookAnchor.setAttribute("target", "_blank")
 let iconFacebook = document.createElement("i");
-iconFacebook.setAttribute("class", "fab fa-facebook")
+iconFacebook.setAttribute("class", "fab fa-facebook-square")
 facebookAnchor.appendChild(iconFacebook);
 facebookItem.appendChild(facebookAnchor);
 footerList.appendChild(facebookItem);
@@ -344,6 +350,8 @@ footerList.appendChild(facebookItem);
 //INSTAGRAM
 let instagramItem = document.createElement("li");
 let instagramAnchor = document.createElement("a");
+instagramAnchor.setAttribute("href", "http://www.instagram.com.br")
+instagramAnchor.setAttribute("target", "_blank")
 let iconInstagram = document.createElement("i");
 iconInstagram.setAttribute("class", "fab fa-instagram")
 instagramAnchor.appendChild(iconInstagram);
@@ -353,9 +361,11 @@ footerList.appendChild(instagramItem);
 //TWITTER
 let twitterItem = document.createElement("li");
 let twitterAnchor = document.createElement("a");
+twitterAnchor.setAttribute("href", "http://www.twitter.com.br")
+twitterAnchor.setAttribute("target", "_blank")
 let iconTwitter = document.createElement("i");
 iconTwitter.setAttribute("class", "fab fa-twitter")
-instagramAnchor.appendChild(iconTwitter);
+twitterAnchor.appendChild(iconTwitter);
 twitterItem.appendChild(twitterAnchor);
 footerList.appendChild(twitterItem);
 

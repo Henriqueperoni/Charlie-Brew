@@ -12,7 +12,7 @@
 #navbar-container {
     background-color: #2F4858;
     overflow: hidden;
-    height: 7vh;
+    heigt: 7vh;
 }
 
 #navbar-container ul {
@@ -39,10 +39,13 @@
 }
 
 #navbar-container ul li a img{
-    height: 60px;
+    height: 80px;
+    width: 80px;
+    margin-top: 5px;
     padding: 0;
     border-radius: 50%;
     align-items: center;
+    background-color: #fff;
 }
 
 /*-----------------------------HERO IMAGE-----------*/
@@ -178,6 +181,10 @@ h2 {
     box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1)
 }
 
+.btn:active {
+    transform: scale(0.9);
+}
+
 .redBorder {
     border: 15px solid #6E0E0A !important;
 }
@@ -211,8 +218,26 @@ h2 {
 
 /*-----------------------------FOOTER-----------*/
 
-
 footer {
     background-color: #2F4858;
-    height: 7vh;
+    
+}
+
+.footerDiv {
+    align-self: center;
+}
+
+.footerDiv ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footerDiv ul li{
+    padding: 20px 45px;
+    font-size: 30px;
+}
+
+.footerDiv ul li a {
+    color: #fafafa;
 }
