@@ -321,6 +321,45 @@ ipaParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it rig
 ipaTextShowUpDiv.appendChild(ipaParagrapherShowup);
 ipaShowUpDiv.appendChild(ipaTextShowUpDiv);
 
+//FOOTER
+let footer = document.createElement("footer")
+
+let footerDiv = document.createElement("div");
+footerDiv.setAttribute("class", "footerDiv");
+footer.appendChild(footerDiv);
+
+// UNORDER LIST
+let footerList = document.createElement("ul");
+footerDiv.appendChild(footerList);
+
+//FACEBOOK
+let facebookItem = document.createElement("li");
+let facebookAnchor = document.createElement("a");
+let iconFacebook = document.createElement("i");
+iconFacebook.setAttribute("class", "fab fa-facebook")
+facebookAnchor.appendChild(iconFacebook);
+facebookItem.appendChild(facebookAnchor);
+footerList.appendChild(facebookItem);
+
+//INSTAGRAM
+let instagramItem = document.createElement("li");
+let instagramAnchor = document.createElement("a");
+let iconInstagram = document.createElement("i");
+iconInstagram.setAttribute("class", "fab fa-instagram")
+instagramAnchor.appendChild(iconInstagram);
+instagramItem.appendChild(instagramAnchor);
+footerList.appendChild(instagramItem);
+
+//TWITTER
+let twitterItem = document.createElement("li");
+let twitterAnchor = document.createElement("a");
+let iconTwitter = document.createElement("i");
+iconTwitter.setAttribute("class", "fab fa-twitter")
+instagramAnchor.appendChild(iconTwitter);
+twitterItem.appendChild(twitterAnchor);
+footerList.appendChild(twitterItem);
+
+
 
 
 
@@ -342,3 +381,4 @@ document.body.appendChild(aboutHeadingDiv);
 document.body.appendChild(aboutContainer);
 document.body.appendChild(beerHeadingDiv);
 document.body.appendChild(beerContainer);
+document.body.appendChild(footer);

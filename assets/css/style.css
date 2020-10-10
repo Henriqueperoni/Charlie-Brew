@@ -209,5 +209,10 @@ h2 {
     padding: 0;
 }
 
+/*-----------------------------FOOTER-----------*/
 
 
+footer {
+    background-color: #2F4858;
+    height: 7vh;
+}
