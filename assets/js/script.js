@@ -55,7 +55,32 @@ navBar.appendChild(navBarUL);
 // HERO IMAGE
 let heroDiv = document.createElement("div");
 heroDiv.setAttribute("id", "hero-img")
+let img1 = document.createElement("img");
+img1.src = "assets/images/img1.png";
+heroDiv.appendChild(img1);
+let img2 = document.createElement("img");
+img2.src = "assets/images/img2.png";
+heroDiv.appendChild(img2);
+let img3 = document.createElement("img");
+img3.src = "assets/images/img3.png";
+heroDiv.appendChild(img3);
+let img4 = document.createElement("img");
+img4.src = "assets/images/img4.png";
+heroDiv.appendChild(img4);
+let img5 = document.createElement("img");
+img5.src = "assets/images/img5.png";
+heroDiv.appendChild(img5);
 
+  window.addEventListener("DOMContentLoaded", function(e) {
+
+    var heroImg = document.getElementById("hero-img");
+    var fadeComplete = function(e) { heroImg.appendChild(arr[0]); };
+    var arr = heroImg.getElementsByTagName("img");
+    for(var i=0; i < arr.length; i++) {
+      arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+  }, false);
 
 
 //H1 DIV
@@ -393,15 +418,22 @@ twitterAnchor.appendChild(iconTwitter);
 twitterItem.appendChild(twitterAnchor);
 footerList.appendChild(twitterItem);
 
-
-
 // APPEDING DIVS TO BODY
 document.body.appendChild(navBar);
-document.body.appendChild(heroDiv);
-document.body.appendChild(aboutHeadingDiv);
-document.body.appendChild(aboutContainer);
-document.body.appendChild(beerHeadingDiv);
-document.body.appendChild(beerContainer);
+
+let section1 = document.createElement("section")
+let section2 = document.createElement("section")
+
+
+section1.appendChild(heroDiv);
+section2.appendChild(aboutHeadingDiv);
+section2.appendChild(aboutContainer);
+section2.appendChild(beerHeadingDiv);
+section2.appendChild(beerContainer);
+
+document.body.appendChild(section1);
+document.body.appendChild(section2);
+
 document.body.appendChild(footer);
 
 
