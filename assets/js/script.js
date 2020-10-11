@@ -251,6 +251,30 @@ let showUpDiv = document.createElement("div");
 showUpDiv.setAttribute("class", "showUpDiv");
 beerContainer.appendChild(showUpDiv);
 
+// TASTE TRAY CONTAINER
+
+let tasteShowUpDiv = document.createElement("div");
+tasteShowUpDiv.setAttribute("class", "beersShowUpDiv");
+tasteShowUpDiv.setAttribute("id", "tasteShowUpDiv");
+showUpDiv.appendChild(tasteShowUpDiv);
+
+
+// IMAGE
+let tasteImageShowUpDiv = document.createElement("div");
+tasteImageShowUpDiv.setAttribute("class", "imageShowUpDiv showUpElement");
+tasteShowUpDiv.appendChild(tasteImageShowUpDiv);
+let tasteImageShowUp = document.createElement("img");
+tasteImageShowUp.src = "assets/images/taste-tray.png"
+tasteImageShowUpDiv.appendChild(tasteImageShowUp);
+
+// TEXT
+let tasteTextShowUpDiv = document.createElement("div");
+tasteTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
+let = tasteParagrapherShowup = document.createElement("p");
+tasteParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+tasteTextShowUpDiv.appendChild(tasteParagrapherShowup);
+tasteShowUpDiv.appendChild(tasteTextShowUpDiv);
+
 // LAGER
 let lagerShowUpDiv = document.createElement("div");
 lagerShowUpDiv.setAttribute("class", "beersShowUpDiv");
@@ -385,28 +409,41 @@ document.body.appendChild(footer);
 
 let pickLager = document.getElementById("lagerDiv");
 let choseLager = document.getElementById("lagerShowUpDiv");
+let pickRedAle = document.getElementById("redAleDiv");
+let choseRedAle = document.getElementById("redAleShowUpDiv");
+let pickIpa = document.getElementById("ipaDiv");
+let choseIpa = document.getElementById("ipaShowUpDiv");
+let choseTaste = document.getElementById("tasteShowUpDiv");
+let lagerBlackWhite = document.getElementById("btnLager");
+let RedAleBlackWhite = document.getElementById("btnRedAle");
+let IpaBlackWhite = document.getElementById("btnIpa");
 
 pickLager.addEventListener("click", () => {
     choseLager.style.display = "flex";
     choseRedAle.style.display = "none";
     choseIpa.style.display = "none";
+    choseTaste.style.display = "none";
+    lagerBlackWhite.style.position = "revert";
+    RedAleBlackWhite.style.position = "relative";
+    IpaBlackWhite.style.position = "relative";
 });
-
-let pickRedAle = document.getElementById("redAleDiv");
-let choseRedAle = document.getElementById("redAleShowUpDiv");
 
 pickRedAle.addEventListener("click", () => {
     choseRedAle.style.display = "flex";
     choseLager.style.display = "none";
     choseIpa.style.display = "none";
+    choseTaste.style.display = "none";
+    lagerBlackWhite.style.position = "relative";
+    RedAleBlackWhite.style.position = "revert";
+    IpaBlackWhite.style.position = "relative";
 });
-
-
-let pickIpa = document.getElementById("ipaDiv");
-let choseIpa = document.getElementById("ipaShowUpDiv");
 
 pickIpa.addEventListener("click", () => {
     choseIpa.style.display = "flex";
     choseLager.style.display = "none";
     choseRedAle.style.display = "none";
+    choseTaste.style.display = "none";
+    lagerBlackWhite.style.position = "relative";
+    RedAleBlackWhite.style.position = "relative";
+    IpaBlackWhite.style.position = "revert";
 });

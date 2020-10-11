@@ -181,6 +181,7 @@ h2 {
     width: 150px;
     box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1);
     outline:none;
+    fiter: grayscale(100%);
 }
 
 .btn:active {
@@ -190,17 +191,42 @@ h2 {
 #btnLager {
     background: url("../images/lager.png");
     background-size: contain;
+    position: relative;
 }
 
 #btnRedAle {
     background: url("../images/red-ale.png");
     background-size: contain;
     border: 15px solid #6E0E0A;
+    position: relative;
 }
 
 #btnIpa {
     background: url("../images/ipa.png");
     background-size: contain;
+    position: relative;
+}
+
+#btnLager::before, #btnRedAle::before, #btnIpa::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  background-size: contain;
+  filter: grayscale(100%);
+}
+
+#btnLager::before {
+    background-image: url("../images/lager.png");
+}
+
+#btnRedAle::before {
+    background-image: url("../images/red-ale.png");
+}
+
+#btnIpa::before {
+    background-image: url("../images/ipa.png");
 }
 
 #redBorder {
