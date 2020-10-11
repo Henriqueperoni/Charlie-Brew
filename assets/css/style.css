@@ -178,15 +178,33 @@ h2 {
     border-radius: 50%;
     cursor: pointer;
     height: 150px;
-    box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1)
+    width: 150px;
+    box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1);
+    outline:none;
 }
 
 .btn:active {
     transform: scale(0.9);
 }
 
-.redBorder {
-    border: 15px solid #6E0E0A !important;
+#btnLager {
+    background: url("../images/lager.png");
+    background-size: contain;
+}
+
+#btnRedAle {
+    background: url("../images/red-ale.png");
+    background-size: contain;
+    border: 15px solid #6E0E0A;
+}
+
+#btnIpa {
+    background: url("../images/ipa.png");
+    background-size: contain;
+}
+
+#redBorder {
+    border: 15px solid #6E0E0A;
 }
 
 .beersShowUpDiv {

@@ -56,6 +56,8 @@ navBar.appendChild(navBarUL);
 let heroDiv = document.createElement("div");
 heroDiv.setAttribute("id", "hero-img")
 
+
+
 //H1 DIV
 let introDiv = document.createElement("div");
 introDiv.setAttribute("id", "hero-intro");
@@ -203,9 +205,9 @@ lagerDiv.setAttribute("class", "btnDiv");
 lagerDiv.setAttribute("id", "lagerDiv");
 beerButtonsContainer.appendChild(lagerDiv);
 
-let btnLager = document.createElement("img");
+let btnLager = document.createElement("button");
 btnLager.setAttribute("class", "btn");
-btnLager.src = "assets/images/lager.png"
+btnLager.setAttribute("id", "btnLager");
 lagerDiv.appendChild(btnLager)
 
 let h3lager = document.createElement("h3");
@@ -218,10 +220,9 @@ redAleDiv.setAttribute("class", "btnDiv");
 redAleDiv.setAttribute("id", "redAleDiv");
 beerButtonsContainer.appendChild(redAleDiv);
 
-let btnRedAle = document.createElement("img");
-btnRedAle.setAttribute("class", "btn redBorder");
-btnRedAle.setAttribute("id", "buttomRedAle")
-btnRedAle.src = "assets/images/red-ale.png"
+let btnRedAle = document.createElement("button");
+btnRedAle.setAttribute("class", "btn");
+btnRedAle.setAttribute("id", "btnRedAle");
 redAleDiv.appendChild(btnRedAle)
 
 let h3RedAle = document.createElement("h3");
@@ -234,10 +235,9 @@ ipaDiv.setAttribute("class", "btnDiv");
 ipaDiv.setAttribute("id", "ipaDiv");
 beerButtonsContainer.appendChild(ipaDiv);
 
-let btnIpa = document.createElement("img");
+let btnIpa = document.createElement("button");
 btnIpa.setAttribute("class", "btn");
-btnIpa.setAttribute("id", "buttomIpa")
-btnIpa.src = "assets/images/ipa.png"
+btnIpa.setAttribute("id", "btnIpa");
 ipaDiv.appendChild(btnIpa)
 
 let h3Ipa = document.createElement("h3");
@@ -286,7 +286,7 @@ let redAleImageShowUpDiv = document.createElement("div");
 redAleImageShowUpDiv.setAttribute("class", "imageShowUpDiv showUpElement");
 redAleShowUpDiv.appendChild(redAleImageShowUpDiv);
 let redAleImageShowUp = document.createElement("img");
-redAleImageShowUp.setAttribute("class", "redBorder");
+redAleImageShowUp.setAttribute("id", "redBorder");
 redAleImageShowUp.src = "assets/images/red-ale.png"
 redAleImageShowUpDiv.appendChild(redAleImageShowUp);
 
@@ -371,20 +371,7 @@ footerList.appendChild(twitterItem);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// APPEDING DIVS
+// APPEDING DIVS TO BODY
 document.body.appendChild(navBar);
 document.body.appendChild(heroDiv);
 document.body.appendChild(aboutHeadingDiv);
@@ -392,3 +379,7 @@ document.body.appendChild(aboutContainer);
 document.body.appendChild(beerHeadingDiv);
 document.body.appendChild(beerContainer);
 document.body.appendChild(footer);
+
+
+//BUTTONS BEER APPAER/DESAPPEAR
+
