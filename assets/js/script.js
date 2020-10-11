@@ -301,7 +301,7 @@ redAleShowUpDiv.appendChild(redAleTextShowUpDiv);
 // IPA
 let ipaShowUpDiv = document.createElement("div");
 ipaShowUpDiv.setAttribute("class", "beersShowUpDiv");
-ipaShowUpDiv.setAttribute("id", "lagerShowUpDiv");
+ipaShowUpDiv.setAttribute("id", "ipaShowUpDiv");
 showUpDiv.appendChild(ipaShowUpDiv);
 
 
@@ -383,3 +383,30 @@ document.body.appendChild(footer);
 
 //BUTTONS BEER APPAER/DESAPPEAR
 
+let pickLager = document.getElementById("lagerDiv");
+let choseLager = document.getElementById("lagerShowUpDiv");
+
+pickLager.addEventListener("click", () => {
+    choseLager.style.display = "flex";
+    choseRedAle.style.display = "none";
+    choseIpa.style.display = "none";
+});
+
+let pickRedAle = document.getElementById("redAleDiv");
+let choseRedAle = document.getElementById("redAleShowUpDiv");
+
+pickRedAle.addEventListener("click", () => {
+    choseRedAle.style.display = "flex";
+    choseLager.style.display = "none";
+    choseIpa.style.display = "none";
+});
+
+
+let pickIpa = document.getElementById("ipaDiv");
+let choseIpa = document.getElementById("ipaShowUpDiv");
+
+pickIpa.addEventListener("click", () => {
+    choseIpa.style.display = "flex";
+    choseLager.style.display = "none";
+    choseRedAle.style.display = "none";
+});

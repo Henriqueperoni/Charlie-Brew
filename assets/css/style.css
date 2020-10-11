@@ -162,7 +162,7 @@ h2 {
 .buttonsContainer {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .btnDiv h3{
@@ -232,6 +232,10 @@ h2 {
 
 .textShowUpDiv p {
     padding: 0;
+}
+
+#lagerShowUpDiv, #redAleShowUpDiv, #ipaShowUpDiv {
+    display: none;
 }
 
 /*-----------------------------FOOTER-----------*/
