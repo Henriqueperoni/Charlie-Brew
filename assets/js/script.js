@@ -397,7 +397,73 @@ contactHeadingDiv.appendChild(contactHeading);
 
 //CONTACT CONTAINER
 let contactContainer = document.createElement("div");
-contactContainer.setAttribute("class", "containercontact")
+contactContainer.setAttribute("class", "containercontact");
+
+//FORM
+let form = document.createElement("form")
+contactContainer.appendChild(form);
+
+//FIRST NAME
+let labelfName = document.createElement("label");
+labelfName.setAttribute("for", "fname");
+labelfName.innerHTML = "First Name:"
+form.appendChild(labelfName);
+let inputfName = document.createElement("input");
+inputfName.setAttribute("class", "textInput");
+inputfName.setAttribute("id", "fname");
+inputfName.setAttribute("name", "fname");
+inputfName.setAttribute("type", "text");
+inputfName.setAttribute("placeholder", "First Name");
+form.appendChild(inputfName);
+
+//LAST NAME
+let labellName = document.createElement("label");
+labellName.setAttribute("for", "name");
+labellName.innerHTML = "Last Name:"
+form.appendChild(labellName);
+let inputlName = document.createElement("input");
+inputlName.setAttribute("class", "textInput");
+inputlName.setAttribute("id", "lname");
+inputlName.setAttribute("name", "lname");
+inputlName.setAttribute("type", "text");
+inputlName.setAttribute("placeholder", "Last Name");
+form.appendChild(inputlName);
+
+//LAST NAME
+let labelEmail = document.createElement("label");
+labelEmail.setAttribute("for", "email");
+labelEmail.innerHTML = "Email Adress:"
+form.appendChild(labelEmail);
+let inputEmail = document.createElement("input");
+inputEmail.setAttribute("class", "textInput");
+inputEmail.setAttribute("id", "email");
+inputEmail.setAttribute("name", "email");
+inputEmail.setAttribute("type", "email");
+inputEmail.setAttribute("placeholder", "Email Adress");
+form.appendChild(inputEmail);
+
+//MESSAGE
+let labelMessage = document.createElement("label");
+labelMessage.setAttribute("for", "message");
+labelMessage.innerHTML = "Your message:"
+form.appendChild(labelMessage);
+let textArea = document.createElement("textarea");
+textArea.setAttribute("class", "textInput");
+textArea.setAttribute("id", "message");
+textArea.setAttribute("name", "message");
+textArea.setAttribute("rows", "5");
+textArea.setAttribute("placeholder", "Let us if you have any request, suggestions or doubt");
+form.appendChild(textArea);
+
+//BUTTON
+let inputButtom = document.createElement("input");
+inputButtom.setAttribute("class", "buttonForm");
+inputButtom.setAttribute("type", "submit");
+inputButtom.setAttribute("value", "Submit");
+form.appendChild(inputButtom);
+
+
+
 
 
 
