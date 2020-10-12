@@ -464,6 +464,11 @@ inputButtom.setAttribute("type", "submit");
 inputButtom.setAttribute("value", "Submit");
 form.appendChild(inputButtom);
 
+//MAP
+let mapDiv = document.createElement("div");
+mapDiv.setAttribute("id", "map");
+contactContainer.appendChild(mapDiv);
+
 
 //FOOTER
 let footer = document.createElement("footer")
@@ -520,6 +525,7 @@ let section1 = document.createElement("section")
 let section2 = document.createElement("section")
 let section3 = document.createElement("section")
 let section4 = document.createElement("section")
+section1.setAttribute("id", "hero");
 section2.setAttribute("id", "about");
 section3.setAttribute("id", "beers");
 section4.setAttribute("id", "contact");

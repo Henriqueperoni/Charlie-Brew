@@ -283,12 +283,27 @@ h2 {
 }
 
 /*-----------------------------CONTACT-----------*/
+
+#contact {
+    min-height: 0;
+}
+
+#map {
+  height: 400px;
+  width: 400px;
+}
+
+.containercontact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
 .containercontact form {
     color: #F6AE2D;
     font-weight: 600;
     max-width: 400px;
-    padding: 30px;
-
+    margin:50px
 }
 
 .textInput {
@@ -319,6 +334,13 @@ h2 {
     background-color: #ffb700;
 }
 
+/*-----------------------------MAP-----------*/
+
+#map {
+    max-width: 400px;
+    height: auto;
+    margin: 50px;
+}
 
 /*-----------------------------FOOTER-----------*/
 
