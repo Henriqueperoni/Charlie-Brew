@@ -7,7 +7,7 @@ let navBarUL = document.createElement("ul");
 // HOME BUTTON
 let homeItem = document.createElement("li");
 let homeAnchor = document.createElement('a');
-homeAnchor.setAttribute('href',"http://www.google.com.br");
+homeAnchor.setAttribute('href',"#");
 homeAnchor.innerHTML = "home";
 homeItem.appendChild(homeAnchor);
 navBarUL.appendChild(homeItem);
@@ -15,7 +15,7 @@ navBarUL.appendChild(homeItem);
 // ABOUT BUTTON
 let aboutItem = document.createElement("li");
 let aboutAnchor = document.createElement('a');
-aboutAnchor.setAttribute('href',"http://www.google.com.br");
+aboutAnchor.setAttribute('href',"#about");
 aboutAnchor.innerHTML = "about";
 aboutItem.appendChild(aboutAnchor);
 navBarUL.appendChild(aboutItem);
@@ -23,18 +23,31 @@ navBarUL.appendChild(aboutItem);
 // LOGO
 let logoItem = document.createElement("li");
 let logoAnchor = document.createElement('a');
-aboutAnchor.setAttribute('href',"http://www.google.com.br");
+logoAnchor.setAttribute('href',"#");
 let navBarImg = document.createElement("img");
+navBarImg.setAttribute("id", "logo");
 navBarImg.src = "assets/images/logo2.png"
 logoAnchor.appendChild(navBarImg);
 logoItem.appendChild(logoAnchor);
 navBarUL.appendChild(logoItem);
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction () {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("logo").style.width = "80px"
+        document.getElementById("logo").style.height = "80px"
+    } else {
+        document.getElementById("logo").style.width = "150px"
+        document.getElementById("logo").style.height = "150px"
+    }
+}
+
 
 // BEERS BUTTON
 let beersItem = document.createElement("li");
 let beersAnchor = document.createElement('a');
-beersAnchor.setAttribute('href',"http://www.google.com.br");
+beersAnchor.setAttribute('href',"#beers");
 beersAnchor.innerHTML = "beers";
 beersItem.appendChild(beersAnchor);
 navBarUL.appendChild(beersItem);
@@ -42,7 +55,7 @@ navBarUL.appendChild(beersItem);
 // CONTACT BUTTON
 let contactItem = document.createElement("li");
 let contactAnchor = document.createElement('a');
-contactAnchor.setAttribute('href',"http://www.google.com.br");
+contactAnchor.setAttribute('href',"#contact");
 contactAnchor.innerHTML = "contact";
 contactItem.appendChild(contactAnchor);
 navBarUL.appendChild(contactItem);
@@ -120,7 +133,7 @@ aboutHeadingDiv.appendChild(aboutHeading);
 
 // ABOUT CONTAINER
 let aboutContainer = document.createElement("div");
-aboutContainer.setAttribute("class", "containerAbout")
+aboutContainer.setAttribute("class", "containerAbout");
 
 //ABOUT PARAGRAPHERS
 let paragrapherContainer = document.createElement("div")
@@ -202,7 +215,8 @@ ourPeopleTextDiv.appendChild(ourPeopleTextDivParagrapher);
 // BEERS
 //BEERS HEADING
 let beerHeadingDiv = document.createElement("div");
-beerHeadingDiv.setAttribute("class", "containerHeading")
+beerHeadingDiv.setAttribute("class", "containerHeading");
+
 
 let beerHeading = document.createElement("h2");
 beerHeading.innerHTML = "beers";
@@ -370,6 +384,23 @@ ipaParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it rig
 ipaTextShowUpDiv.appendChild(ipaParagrapherShowup);
 ipaShowUpDiv.appendChild(ipaTextShowUpDiv);
 
+
+// CONTACT
+//CONTACT HEADING
+let contactHeadingDiv = document.createElement("div");
+contactHeadingDiv.setAttribute("class", "containerHeading");
+
+
+let contactHeading = document.createElement("h2");
+contactHeading.innerHTML = "contact";
+contactHeadingDiv.appendChild(contactHeading);
+
+//CONTACT CONTAINER
+let contactContainer = document.createElement("div");
+contactContainer.setAttribute("class", "containercontact")
+
+
+
 //FOOTER
 let footer = document.createElement("footer")
 
@@ -423,16 +454,28 @@ document.body.appendChild(navBar);
 
 let section1 = document.createElement("section")
 let section2 = document.createElement("section")
+let section3 = document.createElement("section")
+let section4 = document.createElement("section")
+section2.setAttribute("id", "about");
+section3.setAttribute("id", "beers");
+section4.setAttribute("id", "contact");
+
+
 
 
 section1.appendChild(heroDiv);
 section2.appendChild(aboutHeadingDiv);
 section2.appendChild(aboutContainer);
-section2.appendChild(beerHeadingDiv);
-section2.appendChild(beerContainer);
+section3.appendChild(beerHeadingDiv);
+section3.appendChild(beerContainer);
+section4.appendChild(contactHeadingDiv);
+section4.appendChild(contactContainer);
+
 
 document.body.appendChild(section1);
 document.body.appendChild(section2);
+document.body.appendChild(section3);
+document.body.appendChild(section4);
 
 document.body.appendChild(footer);
 
