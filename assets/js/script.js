@@ -402,6 +402,8 @@ contactContainer.setAttribute("class", "containercontact");
 //FORM
 let form = document.createElement("form")
 contactContainer.appendChild(form);
+form.setAttribute("id", "contactForm ");
+form.setAttribute("onsubmit", "return sendMail(this);")
 
 //FIRST NAME
 let labelfName = document.createElement("label");
@@ -461,10 +463,6 @@ inputButtom.setAttribute("class", "buttonForm");
 inputButtom.setAttribute("type", "submit");
 inputButtom.setAttribute("value", "Submit");
 form.appendChild(inputButtom);
-
-
-
-
 
 
 //FOOTER
