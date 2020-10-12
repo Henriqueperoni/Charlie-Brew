@@ -488,7 +488,7 @@ let facebookAnchor = document.createElement("a");
 facebookAnchor.setAttribute("href", "http://www.facebook.com.br")
 facebookAnchor.setAttribute("target", "_blank")
 let iconFacebook = document.createElement("i");
-iconFacebook.setAttribute("class", "fab fa-facebook-square")
+iconFacebook.setAttribute("class", "fab fa-facebook")
 facebookAnchor.appendChild(iconFacebook);
 facebookItem.appendChild(facebookAnchor);
 footerList.appendChild(facebookItem);

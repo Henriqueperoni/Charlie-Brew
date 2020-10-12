@@ -342,6 +342,12 @@ footer {
     font-size: 30px;
 }
 
-.footerDiv ul li a {
+.footerDiv  i {
     color: #fafafa;
+    transition: transform 0.5s;
+}
+
+.footerDiv i:hover {
+    transform: scale(1.2);
+    color:#F6AE2D;
 }
