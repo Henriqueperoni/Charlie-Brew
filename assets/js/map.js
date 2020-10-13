@@ -7,10 +7,3 @@ function initMap() {
 
   let marker = new google.maps.Marker({position: charlieBrew, map: map});
 }
-
-
-
-
-
-
-

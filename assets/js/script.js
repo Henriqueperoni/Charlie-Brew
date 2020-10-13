@@ -130,7 +130,7 @@ burguerDiv.appendChild(line3Div);
 
 
 let introHide = document.createElement("div");
-introHide.setAttribute("class", "intro"); // Append to body
+introHide.setAttribute("class", "intro");
 let introText = document.createElement("div");
 introText.setAttribute("class", "intro-text");
 introHide.appendChild(introText);
@@ -158,42 +158,18 @@ textSpan3.innerHTML = "Charlie Brew"
 hide1.appendChild(textSpan1);
 hide2.appendChild(textSpan2);
 hide3.appendChild(textSpan3);
-let slider = document.createElement("div");
-slider.setAttribute("class", "slider"); // 
 
-
-
-
-
-
-
-
-
-//-----------------------------------------------------H1 DIV
-let introDiv = document.createElement("div");
-introDiv.setAttribute("id", "hero-intro");
-heroDiv.appendChild(introDiv);
-
-// H1
-let myH1 = document.createElement("H1");
-introDiv.appendChild(myH1);
-
-
-
-// H1 CONTAINER
-let H1SpanOne = document.createElement("span");
-let H1SpanTwo = document.createElement("span");
-let H1SpanThree = document.createElement("span");
-myH1.appendChild(H1SpanOne);
-myH1.appendChild(H1SpanTwo);
-myH1.appendChild(H1SpanThree);
-H1SpanOne.innerHTML = "Welcome"
-H1SpanTwo.innerHTML = "to the"
-H1SpanThree.innerHTML = "Charlie Brew"
 let h1Paragrapher = document.createElement("p");
-h1Paragrapher.innerHTML = "Where the beer is served colder than your ex's heart"
-introDiv.appendChild(h1Paragrapher);
+h1Paragrapher.setAttribute("class", "hide");
+introText.appendChild(h1Paragrapher);
+let slider = document.createElement("div");
+let textSpan4 = document.createElement("span");
+textSpan4.setAttribute("class", "text");
+textSpan4.innerHTML = "Where the beer is served colder than your ex's heart"
+h1Paragrapher.appendChild(textSpan4);
 
+
+slider.setAttribute("class", "slider");
 
 
 // ABOUT HEADING
@@ -688,7 +664,7 @@ navSlide();
 
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}})
 
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".text", { y: "0%", duration: 1.5, delay: 1.0, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 1.0 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });

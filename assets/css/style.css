@@ -52,6 +52,7 @@ nav a {
     text-transform: uppercase;
     transition-duration: 0.5s;
 }
+
 nav a:hover {
     color:#F6AE2D;
 }
@@ -112,26 +113,7 @@ nav a:hover {
     to   { opacity: 0.0; }
   }
 
-#hero-intro {
-    display: inline-block;
-    background: url(../images/beer-bg1.png);
-    background-position: center;
-    background-size: contain;
-    max-width: 320px;
-    padding: 100px 30px;
-    bottom: 30px;
-    left: 150px;
-    position: absolute;
-    border-radius: 70px 70px 5px 5px;
-    text-shadow: 7px 7px 13px rgba(255,255,255,0.80);
-    font-weight: 700;
-    z-index: 3;
-}
 
-#hero-img h1 span{
-    display: block;
-    text-transform: uppercase;
-}
 
 /*-----------------------------ANIMATION-----------*/
 
@@ -155,12 +137,12 @@ nav a:hover {
     font-weight: 100;
 }
 
-.intro-text h1{
+.intro-text h1 {
     font-weight: 400;
 }
 
 .slider {
-    background: #2F4858;
+    background: #21303A;
     position: fixed;
     top: 0;
     left: 0;
@@ -177,8 +159,14 @@ nav a:hover {
 
 .hide span {
     transform: translateY(100%);
-    display: inline-block;
+    display: block;
+    padding: 0 55px;
 }
+
+.intro-text p {
+    font-size: 16px;
+}
+
 
 
 
@@ -285,8 +273,8 @@ h2 {
     border: 12px solid #ffa400;
     border-radius: 50%;
     cursor: pointer;
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: 140px;
     box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 1);
     outline:none;
 }
@@ -492,9 +480,17 @@ footer {
         min-height: 10vh;
     }
 
+    nav a {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
     .charlieName {
         display: block;
         padding-left: 20px;
+        font-size: 20px;
     }
 
     .navLinks {
