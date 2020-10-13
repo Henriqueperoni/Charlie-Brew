@@ -4,12 +4,19 @@ navBarDiv.setAttribute("id", "navbar-container");
 let navBar = document.createElement("nav")
 navBarDiv.appendChild(navBar);
 
+let charlieName = document.createElement("a");
+charlieName.setAttribute("class", "charlieName");
+charlieName.setAttribute('href',"#");
+charlieName.innerHTML = "charlie brew"
+navBar.appendChild(charlieName);
+
+
 let navBarUL = document.createElement("ul");
 navBarUL.setAttribute("class", "navLinks")
 
-
 // HOME BUTTON
 let homeItem = document.createElement("li");
+homeItem.setAttribute("class", "navBarItem");
 let homeAnchor = document.createElement('a');
 homeAnchor.setAttribute('href',"#");
 homeAnchor.innerHTML = "home";
@@ -18,6 +25,7 @@ navBarUL.appendChild(homeItem);
 
 // ABOUT BUTTON
 let aboutItem = document.createElement("li");
+aboutItem.setAttribute("class", "navBarItem");
 let aboutAnchor = document.createElement('a');
 aboutAnchor.setAttribute('href',"#about");
 aboutAnchor.innerHTML = "about";
@@ -50,6 +58,7 @@ function scrollFunction () {
 
 // BEERS BUTTON
 let beersItem = document.createElement("li");
+beersItem.setAttribute("class", "navBarItem");
 let beersAnchor = document.createElement('a');
 beersAnchor.setAttribute('href',"#beers");
 beersAnchor.innerHTML = "beers";
@@ -58,6 +67,7 @@ navBarUL.appendChild(beersItem);
 
 // CONTACT BUTTON
 let contactItem = document.createElement("li");
+contactItem.setAttribute("class", "navBarItem");
 let contactAnchor = document.createElement('a');
 contactAnchor.setAttribute('href',"#contact");
 contactAnchor.innerHTML = "contact";
@@ -627,10 +637,17 @@ pickIpa.addEventListener("click", () => {
 const navSlide = () => {
     const burguer = document.querySelector('.burguer');
     const nav = document.querySelector('.navLinks');
+    const cucu = document.querySelector('.navBarItem');
 
     burguer.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
     })
+
+    nav.addEventListener('click', () =>{
+        nav.classList.toggle('nav-active');
+    })
 }
+
+
 
 navSlide();
