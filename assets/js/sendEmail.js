@@ -7,15 +7,15 @@ function sendMail(contactForm) {
     })
 
     .then(
-            
+
             function(response) {
                 console.log("SUCCESS", response);
             },
-        
+
             function (error) {
                 alert("Sorry, it seems we have a problem. Please fill out the form and Submit again", error);
             });
-           
+
             document.getElementById('contactForm').reset();
     return false;
-}
+} 

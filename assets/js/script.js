@@ -1,7 +1,11 @@
-let navBar = document.createElement("div");
-navBar.setAttribute("id", "navbar-container")
+let navBarDiv = document.createElement("div");
+navBarDiv.setAttribute("id", "navbar-container");
+
+let navBar = document.createElement("nav")
+navBarDiv.appendChild(navBar);
 
 let navBarUL = document.createElement("ul");
+navBarUL.setAttribute("class", "navLinks")
 
 
 // HOME BUTTON
@@ -34,12 +38,12 @@ navBarUL.appendChild(logoItem);
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction () {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("logo").style.width = "80px"
         document.getElementById("logo").style.height = "80px"
     } else {
-        document.getElementById("logo").style.width = "150px"
-        document.getElementById("logo").style.height = "150px"
+        document.getElementById("logo").style.width = "140px"
+        document.getElementById("logo").style.height = "140px"
     }
 }
 
@@ -95,8 +99,33 @@ heroDiv.appendChild(img5);
 
   }, false);
 
+// BURGUER 
 
-//H1 DIV
+let burguerDiv = document.createElement("div");
+burguerDiv.setAttribute("class", "burguer");
+navBar.appendChild(burguerDiv);
+
+let line1Div = document.createElement("div");
+line1Div.setAttribute("class", "line1");
+burguerDiv.appendChild(line1Div);
+let line2Div = document.createElement("div");
+line2Div.setAttribute("class", "line2");
+burguerDiv.appendChild(line2Div);
+let line3Div = document.createElement("div");
+line3Div.setAttribute("class", "line3");
+burguerDiv.appendChild(line3Div);
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------H1 DIV
 let introDiv = document.createElement("div");
 introDiv.setAttribute("id", "hero-intro");
 heroDiv.appendChild(introDiv);
@@ -163,6 +192,7 @@ pubImageDiv.appendChild(pubImage);
 // PUB
 let pubTextDiv = document.createElement("div");
 pubTextDiv.setAttribute("class", "aboutContent");
+pubTextDiv.setAttribute("id", "pubText")
 containerHistory.appendChild(pubTextDiv);
 let pubTextDivH3 = document.createElement("h3")
 pubTextDivH3.innerHTML = "Pub";
@@ -195,6 +225,7 @@ beerGardenImageDiv.appendChild(beerGardenImage);
 
 let ourPeopleImageDiv = document.createElement("div");
 ourPeopleImageDiv.setAttribute("class", "aboutContent");
+ourPeopleImageDiv.setAttribute("id", "ourPeopleImg")
 containerHistory.appendChild(ourPeopleImageDiv)
 let ourPeopleImage = document.createElement("img");
 ourPeopleImage.src = "assets/images/our-people.png";
@@ -519,7 +550,7 @@ twitterItem.appendChild(twitterAnchor);
 footerList.appendChild(twitterItem);
 
 // APPEDING DIVS TO BODY
-document.body.appendChild(navBar);
+document.body.appendChild(navBarDiv);
 
 let section1 = document.createElement("section")
 let section2 = document.createElement("section")
@@ -592,3 +623,14 @@ pickIpa.addEventListener("click", () => {
     RedAleBlackWhite.style.position = "relative";
     IpaBlackWhite.style.position = "revert";
 });
+
+const navSlide = () => {
+    const burguer = document.querySelector('.burguer');
+    const nav = document.querySelector('.navLinks');
+
+    burguer.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    })
+}
+
+navSlide();
