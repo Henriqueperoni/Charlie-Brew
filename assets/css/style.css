@@ -417,12 +417,17 @@ footer {
         padding: 5px;
     }
 
+    #about, #beers, #contact {
+        padding-top: 60px;
+    }
+
     #logo {
         display: none;
     }
 
     nav {
         justify-content: space-between;
+        min-height: 10vh;
     }
 
     .charlieName {
