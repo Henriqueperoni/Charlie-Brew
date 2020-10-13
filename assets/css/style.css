@@ -132,6 +132,68 @@ nav a:hover {
     display: block;
     text-transform: uppercase;
 }
+
+/*-----------------------------ANIMATION-----------*/
+
+.intro {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+.intro-text {
+    color: #F6AE2D;
+    z-index: 501;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.intro-text h1{
+    font-weight: 400;
+}
+
+.slider {
+    background: #2F4858;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+    transform: translateY(100%);
+}
+
+.hide {
+    background: #000000;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------ABOUT-----------*/
 .containerHeading, .containerAbout, .containerbeer, .containercontact {
     max-width: 1140px;
@@ -152,7 +214,7 @@ h2 {
 
 .aboutText {
     max-width: 940px;
-    padding:50px 0;
+    padding-top: 50px;
     margin: 0 auto;
     color: #F6AE2D;
     font-weight: 500;
@@ -408,7 +470,7 @@ footer {
 
 /*-----------------------------MEDIA QUERIES-----------*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:973px) {
     body {
         overflow-x: hidden;
     }
@@ -463,6 +525,15 @@ footer {
         display:none;
     }
 
+    
+
+    .intro-text {
+        color: #F6AE2D;
+        z-index: 501;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
     .aboutContent {
         margin: 20px 25px;
     }
@@ -490,5 +561,6 @@ footer {
 
     #map {
     margin: 0 40px 40px 40px;
+    }
 
 }

@@ -1,3 +1,5 @@
+//NAVBAR
+
 let navBarDiv = document.createElement("div");
 navBarDiv.setAttribute("id", "navbar-container");
 
@@ -127,6 +129,38 @@ burguerDiv.appendChild(line3Div);
 
 
 
+let introHide = document.createElement("div");
+introHide.setAttribute("class", "intro"); // Append to body
+let introText = document.createElement("div");
+introText.setAttribute("class", "intro-text");
+introHide.appendChild(introText);
+
+let hide1 = document.createElement("h1");
+hide1.setAttribute("class", "hide");
+introText.appendChild(hide1);
+let hide2 = document.createElement("h1");
+hide2.setAttribute("class", "hide");
+introText.appendChild(hide2);
+let hide3 = document.createElement("h1");
+hide3.setAttribute("class", "hide");
+introText.appendChild(hide3);
+
+
+let textSpan1 = document.createElement("span");
+textSpan1.setAttribute("class", "text");
+let textSpan2 = document.createElement("span");
+textSpan2.setAttribute("class", "text");
+let textSpan3 = document.createElement("span");
+textSpan3.setAttribute("class", "text");
+textSpan1.innerHTML = "Welcome"
+textSpan2.innerHTML = "to the"
+textSpan3.innerHTML = "Charlie Brew"
+hide1.appendChild(textSpan1);
+hide2.appendChild(textSpan2);
+hide3.appendChild(textSpan3);
+let slider = document.createElement("div");
+slider.setAttribute("class", "slider"); // 
+
 
 
 
@@ -148,8 +182,8 @@ introDiv.appendChild(myH1);
 
 // H1 CONTAINER
 let H1SpanOne = document.createElement("span");
-let H1SpanTwo = document.createElement("span")
-let H1SpanThree = document.createElement("span")
+let H1SpanTwo = document.createElement("span");
+let H1SpanThree = document.createElement("span");
 myH1.appendChild(H1SpanOne);
 myH1.appendChild(H1SpanTwo);
 myH1.appendChild(H1SpanThree);
@@ -575,6 +609,8 @@ section4.setAttribute("id", "contact");
 
 
 section1.appendChild(heroDiv);
+section1.appendChild(introHide);
+section1.appendChild(slider);
 section2.appendChild(aboutHeadingDiv);
 section2.appendChild(aboutContainer);
 section3.appendChild(beerHeadingDiv);
@@ -648,6 +684,11 @@ const navSlide = () => {
     })
 }
 
-
-
 navSlide();
+
+const tl = gsap.timeline({defaults: {ease: 'power1.out'}})
+
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
