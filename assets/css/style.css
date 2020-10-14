@@ -115,7 +115,7 @@ nav a:hover {
 
 
 
-/*-----------------------------ANIMATION-----------
+/*-----------------------------ANIMATION-----------*/
 
 .intro {
     background: #000000;
@@ -167,11 +167,11 @@ nav a:hover {
     font-size: 16px;
 }
 
-*/
+
 .modalOverAgeContainer {
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.90);
     position: fixed;
     top: 0;
     left: 0;
@@ -194,7 +194,7 @@ nav a:hover {
     align-items: center;
 }
 
-.modal-container.showModal {
+.modalOverAgeContainer.showModal1 {
     display: flex;
 }
 
@@ -232,11 +232,11 @@ nav a:hover {
     font-size: 20px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 #buttonYes {
     background-color:#2F4858;
-    color: #F6AE2D
 }
 
 #buttonNo {

@@ -602,13 +602,14 @@ overAgeModalDiv.appendChild(overAgeText);
 let buttonsDiv = document.createElement("div");
 overAgeModalDiv.appendChild(buttonsDiv);
 let buttonYes = document.createElement("button");
-buttonYes.setAttribute("class", "buttonModal");
+buttonYes.setAttribute("class", "buttonModal overAge");
 buttonYes.setAttribute("id", "buttonYes");
 buttonYes.innerHTML = "Yes";
 buttonsDiv.appendChild(buttonYes);
 let buttonNo = document.createElement("button");
 buttonNo.setAttribute("class", "buttonModal");
 buttonNo.setAttribute("id", "buttonNo");
+buttonNo.setAttribute("href", "https://www.helpguide.org/articles/addictions/underage-drinking.htm")
 buttonNo.innerHTML = "No"
 buttonsDiv.appendChild(buttonNo);
 
@@ -718,10 +719,10 @@ const navSlide = () => {
 }
 
 navSlide();
-/*
+
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}})
 
 tl.to(".text", { y: "0%", duration: 1.5, delay: 1.0, stagger: 0.25 });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay: 1.0 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });*/
+tl.fromTo("nav, .modalOverAgeContainer", { opacity: 0 }, { opacity: 1, duration: 1 });
