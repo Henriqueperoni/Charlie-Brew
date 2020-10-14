@@ -515,6 +515,26 @@ inputButtom.setAttribute("type", "submit");
 inputButtom.setAttribute("value", "Submit");
 form.appendChild(inputButtom);
 
+//----------------------------------------------MODAL
+
+let modalEmail = document.createElement("div");
+modalEmail.setAttribute("id", "modalEmail");
+modalEmail.setAttribute("class", "modal-container");
+let modalDiv = document.createElement("div");
+modalDiv.setAttribute("class", "modal");
+modalEmail.appendChild(modalDiv);
+let modalText = document.createElement("p");
+modalText.innerHTML = "Thank you for contacting us. Charlie Brew team will contact you soon."
+modalDiv.appendChild(modalText);
+let closeModal = document.createElement("button");
+closeModal.setAttribute("class", "close");
+closeModal.setAttribute("type", "text");
+closeModal.innerHTML = "X"
+modalDiv.appendChild(closeModal);
+
+
+
+
 //MAP
 let mapDiv = document.createElement("div");
 mapDiv.setAttribute("id", "map");
@@ -601,6 +621,7 @@ document.body.appendChild(section3);
 document.body.appendChild(section4);
 
 document.body.appendChild(footer);
+document.body.appendChild(modalEmail);
 
 
 //BUTTONS BEER APPAER/DESAPPEAR
@@ -661,10 +682,10 @@ const navSlide = () => {
 }
 
 navSlide();
-
+/*
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}})
 
 tl.to(".text", { y: "0%", duration: 1.5, delay: 1.0, stagger: 0.25 });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay: 1.0 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
-tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });*/

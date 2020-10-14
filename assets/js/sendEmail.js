@@ -9,6 +9,10 @@ function sendMail(contactForm) {
 
     .then(
         function(response) {
+            const logo = document.getElementById("buttonForm");
+            logo.addEventListener('click', () => {
+            startModal('modalEmail')
+            })
             refresh();
             console.log("SUCCESS", response);
         },
@@ -22,4 +26,15 @@ function sendMail(contactForm) {
         document.getElementById("contactForm ").reset();
     }
 
-/*   contactForm   */
+function startModal(modalID) {
+    const modal = document.getElementById(modalID);
+    modal.classList.add('showModal');
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == "modalID" || e.target.className == "close") {
+            modal.classList.remove("showModal")
+        }
+
+    });
+}
+
+
