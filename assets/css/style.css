@@ -168,8 +168,80 @@ nav a:hover {
 }
 
 */
+.modalOverAgeContainer {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+}
+
+.modal1 {
+    background: #F6AE2D;
+    width: 300px;
+    height: 400px;
+    border: 10px solid #2F4858;
+    box-shadow: 0 0 0 10px #F6AE2D;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal-container.showModal {
+    display: flex;
+}
 
 
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.showModal .modal {
+    animation: modal .3s;
+}
+
+
+.modal1 h2 {
+    justify-content: center;
+    color: #2F4858;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.buttonModal {
+    width: 70px;
+    height: 40px;
+    margin: 0px 10px;
+    color: #F6AE2D;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#buttonYes {
+    background-color:#2F4858;
+    color: #F6AE2D
+}
+
+#buttonNo {
+    background-color: #b30000;
+}
 
 
 
@@ -414,6 +486,7 @@ h2 {
 }
 
 /*-----------------------------MODAL-----------*/
+
 .modal-container {
     width: 100vw;
     height: 100vh;
@@ -433,7 +506,7 @@ h2 {
 
 .modal {
     background: #F6AE2D;
-    width: 60%;
+    width: 400px;
     height: 250px;
     border: 10px solid #2F4858;
     box-shadow: 0 0 0 10px #F6AE2D;
@@ -446,7 +519,7 @@ h2 {
 @keyframes modal {
     from {
         opacity: 0;
-        transform: translateY(-60px);
+        transform: translateY(-100%);
     }
     to {
         opacity: 1;
@@ -456,10 +529,7 @@ h2 {
 
 .showModal .modal {
     animation: modal .3s;
-
 }
-
-
 
 .close {
     width: 50px;
@@ -480,12 +550,8 @@ h2 {
     justify-content: center;
     color: #2F4858;
     font-weight: 600;
+    padding: 0 20px;
 }
-
-
-
-
-
 
 /*-----------------------------MAP-----------*/
 
@@ -590,12 +656,9 @@ footer {
         transform: translateX(0%)
     }
 
-
     #hero-intro {
         display:none;
     }
-
-    
 
     .intro-text {
         color: #F6AE2D;
@@ -627,6 +690,11 @@ footer {
 
     .containercontact form {
         margin: 40px;
+    }
+
+    .modal {
+    width: 250px;
+    height: 400px;
     }
 
     #map {

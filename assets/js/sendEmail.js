@@ -9,10 +9,7 @@ function sendMail(contactForm) {
 
     .then(
         function(response) {
-            const logo = document.getElementById("buttonForm");
-            logo.addEventListener('click', () => {
-            startModal('modalEmail')
-            })
+            startModal('modalEmail');
             refresh();
             console.log("SUCCESS", response);
         },
@@ -22,10 +19,13 @@ function sendMail(contactForm) {
     );
     return false;
 }
-    function refresh() {
-        document.getElementById("contactForm ").reset();
-    }
 
+// Refresh the page when the form is submited
+function refresh() {
+    document.getElementById("contactForm ").reset();
+}
+
+// Modal pop up in the screen when form is submited
 function startModal(modalID) {
     const modal = document.getElementById(modalID);
     modal.classList.add('showModal');

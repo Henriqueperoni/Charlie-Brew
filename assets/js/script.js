@@ -99,7 +99,7 @@ heroDiv.appendChild(img4);
 let img5 = document.createElement("img");
 img5.src = "assets/images/img5.png";
 heroDiv.appendChild(img5);
-
+/*/
   window.addEventListener("DOMContentLoaded", function(e) {
 
     var heroImg = document.getElementById("hero-img");
@@ -110,7 +110,7 @@ heroDiv.appendChild(img5);
     }
 
   }, false);
-
+*/
 // BURGUER 
 
 let burguerDiv = document.createElement("div");
@@ -589,6 +589,41 @@ twitterAnchor.appendChild(iconTwitter);
 twitterItem.appendChild(twitterAnchor);
 footerList.appendChild(twitterItem);
 
+// MODAL OVER AGE
+let overAgeModal = document.createElement("div");
+overAgeModal.setAttribute("class", "modalOverAgeContainer");
+overAgeModal.setAttribute("id", "modalOverAge");
+let overAgeModalDiv = document.createElement("div");
+overAgeModalDiv.setAttribute("class", "modal1")
+overAgeModal.appendChild(overAgeModalDiv);
+let = overAgeText = document.createElement("h2");
+overAgeText.innerHTML = "Are you over 18?"
+overAgeModalDiv.appendChild(overAgeText);
+let buttonsDiv = document.createElement("div");
+overAgeModalDiv.appendChild(buttonsDiv);
+let buttonYes = document.createElement("button");
+buttonYes.setAttribute("class", "buttonModal");
+buttonYes.setAttribute("id", "buttonYes");
+buttonYes.innerHTML = "Yes";
+buttonsDiv.appendChild(buttonYes);
+let buttonNo = document.createElement("button");
+buttonNo.setAttribute("class", "buttonModal");
+buttonNo.setAttribute("id", "buttonNo");
+buttonNo.innerHTML = "No"
+buttonsDiv.appendChild(buttonNo);
+
+
+
+
+
+
+
+
+
+
+
+
+
 // APPEDING DIVS TO BODY
 document.body.appendChild(navBarDiv);
 
@@ -622,6 +657,7 @@ document.body.appendChild(section4);
 
 document.body.appendChild(footer);
 document.body.appendChild(modalEmail);
+document.body.appendChild(overAgeModal);
 
 
 //BUTTONS BEER APPAER/DESAPPEAR
