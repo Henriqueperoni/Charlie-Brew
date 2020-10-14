@@ -361,7 +361,7 @@ tasteImageShowUpDiv.appendChild(tasteImageShowUp);
 let tasteTextShowUpDiv = document.createElement("div");
 tasteTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
 let = tasteParagrapherShowup = document.createElement("p");
-tasteParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+tasteParagrapherShowup.innerHTML = "Charlie Brew Brewery counts with an amazing selection of beers, which are made on house. The pub also has a few guests beer, which is changed every other week.  Although every beer produced by Charlie Brew has a unique flavor, we have our three queens. The wild IPA, the brave Red Ale, and the elegant larger."
 tasteTextShowUpDiv.appendChild(tasteParagrapherShowup);
 tasteShowUpDiv.appendChild(tasteTextShowUpDiv);
 
@@ -384,7 +384,7 @@ lagerImageShowUpDiv.appendChild(lagerImageShowUp);
 let lagerTextShowUpDiv = document.createElement("div");
 lagerTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
 let = lagerParagrapherShowup = document.createElement("p");
-lagerParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+lagerParagrapherShowup.innerHTML = "Lager is one hell of a beer if(that is a big if) you make it right. That is the reason why the Charlie Brew Lager is so special. It is made carefully and with all love of the world. Every detail matters in the process. The Charlie Brew's customers use to say if the IPA and Red Ale are queens, the Charlie Brew Lager is a god.  Stop wasting your time right and, there is a god here waiting for you."
 lagerTextShowUpDiv.appendChild(lagerParagrapherShowup);
 lagerShowUpDiv.appendChild(lagerTextShowUpDiv);
 
@@ -408,7 +408,7 @@ redAleImageShowUpDiv.appendChild(redAleImageShowUp);
 let redAleTextShowUpDiv = document.createElement("div");
 redAleTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
 let = redAleParagrapherShowup = document.createElement("p");
-redAleParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+redAleParagrapherShowup.innerHTML = "The Charlie Brew Red Ale uses a moderate amount of kilned malts and roasted barley in the recipe, which gives the beer the color for which it is named. Featuring an approachable hop bitterness which rests on the palate, this typically amber-colored beer is brewed as a lager or an ale, and can often have a medium, candy-like caramel malt sweetness."
 redAleTextShowUpDiv.appendChild(redAleParagrapherShowup);
 redAleShowUpDiv.appendChild(redAleTextShowUpDiv);
 
@@ -431,7 +431,7 @@ ipaImageShowUpDiv.appendChild(ipaImageShowUp);
 let ipaTextShowUpDiv = document.createElement("div");
 ipaTextShowUpDiv.setAttribute("class", "textShowUpDiv showUpElement");
 let = ipaParagrapherShowup = document.createElement("p");
-ipaParagrapherShowup.innerHTML = "Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right. Lager is one hell of a beer if you make it right."
+ipaParagrapherShowup.innerHTML = "Our IPA is way more complex than you assume. The Charlie Brew IPA is a modern transformation of the New England Ipa. Our secret? The beer is fresh, simple like that. Different from other types of beer, an IPA has to be as fresh as possible.  So pop in and drink the best IPA you ever drink right off the tanks."
 ipaTextShowUpDiv.appendChild(ipaParagrapherShowup);
 ipaShowUpDiv.appendChild(ipaTextShowUpDiv);
 
@@ -616,15 +616,6 @@ buttonsDiv.appendChild(buttonNo);
 
 
 
-
-
-
-
-
-
-
-
-
 // APPEDING DIVS TO BODY
 document.body.appendChild(navBarDiv);
 
@@ -659,6 +650,16 @@ document.body.appendChild(section4);
 document.body.appendChild(footer);
 document.body.appendChild(modalEmail);
 document.body.appendChild(overAgeModal);
+
+
+document.getElementById("buttonYes").addEventListener('click', () => {
+    document.querySelector('.modalOverAgeContainer').style.display = "none";
+})
+
+document.getElementById("buttonNo").addEventListener('click', () => {
+    window.open("https://www.helpguide.org/articles/addictions/underage-drinking.htm");
+})
+
 
 
 //BUTTONS BEER APPAER/DESAPPEAR

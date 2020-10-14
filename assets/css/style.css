@@ -167,6 +167,7 @@ nav a:hover {
     font-size: 16px;
 }
 
+/*---- MODAL AGE ----*/
 
 .modalOverAgeContainer {
     width: 100vw;
@@ -198,24 +199,6 @@ nav a:hover {
     display: flex;
 }
 
-
-
-@keyframes modal {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.showModal .modal {
-    animation: modal .3s;
-}
-
-
 .modal1 h2 {
     justify-content: center;
     color: #2F4858;
@@ -242,16 +225,6 @@ nav a:hover {
 #buttonNo {
     background-color: #b30000;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*-----------------------------ABOUT-----------*/
@@ -373,7 +346,7 @@ h2 {
     background-size: contain;
     position: relative;
 }
-/*
+
 #btnLager::after, #btnRedAle::after, #btnIpa::after {
   content: "";
   position: absolute;
@@ -394,7 +367,7 @@ h2 {
 
 #btnIpa::after {
     background-image: url("../images/ipa.png");
-}*/
+}
 
 #redBorder {
     border: 15px solid #6E0E0A;

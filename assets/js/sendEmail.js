@@ -37,10 +37,3 @@ function startModal(modalID) {
     });
 }
 
-document.getElementById("buttonYes").addEventListener('click', () => {
-    document.querySelector('.modalOverAgeContainer').style.display = "none";
-})
-
-document.getElementById("buttonNo").addEventListener('click', () => {
-    window.open("https://www.helpguide.org/articles/addictions/underage-drinking.htm");
-})
