@@ -510,7 +510,7 @@ form.appendChild(textArea);
 
 //BUTTON
 let inputButtom = document.createElement("input");
-inputButtom.setAttribute("class", "buttonForm");
+inputButtom.setAttribute("id", "buttonForm");
 inputButtom.setAttribute("type", "submit");
 inputButtom.setAttribute("value", "Submit");
 form.appendChild(inputButtom);

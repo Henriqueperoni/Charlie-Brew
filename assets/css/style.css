@@ -394,7 +394,7 @@ h2 {
     font-size: 15px;
 }
 
-.buttonForm {
+#buttonForm {
     display: block;
     border-radius: 24px;
     border: 1px solid #F18E04;
@@ -408,7 +408,7 @@ h2 {
     outline: none;
 }
 
-.buttonForm:hover {
+#buttonForm:hover {
     cursor: pointer;
     background-color: #ffb700;
 }

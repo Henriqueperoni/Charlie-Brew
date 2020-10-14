@@ -1,4 +1,5 @@
 function sendMail(contactForm) {
+    event.preventDefault()
     emailjs.send("Henrique Peroni", "charliebrew", {
         "from_fname": contactForm.fname.value,
         "from_lname": contactForm.lname.value,
@@ -7,15 +8,18 @@ function sendMail(contactForm) {
     })
 
     .then(
-
-            function(response) {
-                console.log("SUCCESS", response);
-            },
-
-            function (error) {
-                alert("Sorry, it seems we have a problem. Please fill out the form and Submit again", error);
-            });
-
-            document.getElementById('contactForm').reset();
+        function(response) {
+            refresh();
+            console.log("SUCCESS", response);
+        },
+        function(error) {
+            console.log("FAILED", error);
+        }
+    );
     return false;
-} 
+}
+    function refresh() {
+        document.getElementById("contactForm ").reset();
+    }
+
+/*   contactForm   */
