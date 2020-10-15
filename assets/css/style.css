@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -225,6 +226,10 @@ nav a:hover {
 #buttonNo {
     background-color: #b30000;
 }
+
+
+
+
 
 
 /*-----------------------------ABOUT-----------*/

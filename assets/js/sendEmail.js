@@ -33,7 +33,7 @@ function startModal(modalID) {
         if(e.target.id == "modalID" || e.target.className == "close") {
             modal.classList.remove("showModal")
         }
-
+        
     });
 }
 
