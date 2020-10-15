@@ -194,10 +194,12 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    opacity: 1 !important;
 }
 
-.modalOverAgeContainer.showModal1 {
-    display: flex;
+.modalOverAgeContainer.hideModal {
+    transform: translateY(-200%);
+    transition: 1.0s ease;
 }
 
 .modal1 h2 {

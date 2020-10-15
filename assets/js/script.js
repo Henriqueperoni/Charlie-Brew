@@ -12,7 +12,6 @@ charlieName.setAttribute('href',"#");
 charlieName.innerHTML = "charlie brew"
 navBar.appendChild(charlieName);
 
-
 let navBarUL = document.createElement("ul");
 navBarUL.setAttribute("class", "navLinks")
 
@@ -79,7 +78,7 @@ navBarUL.appendChild(contactItem);
 // UNORDER LIST TO NAVBAR
 navBar.appendChild(navBarUL);
 
-
+//NARBAR FINISH
 
 // HERO IMAGE
 let heroDiv = document.createElement("div");
@@ -99,7 +98,7 @@ heroDiv.appendChild(img4);
 let img5 = document.createElement("img");
 img5.src = "assets/images/img5.png";
 heroDiv.appendChild(img5);
-/*/
+
   window.addEventListener("DOMContentLoaded", function(e) {
 
     var heroImg = document.getElementById("hero-img");
@@ -110,7 +109,7 @@ heroDiv.appendChild(img5);
     }
 
   }, false);
-*/
+
 // BURGUER 
 
 let burguerDiv = document.createElement("div");
@@ -515,7 +514,7 @@ inputButtom.setAttribute("type", "submit");
 inputButtom.setAttribute("value", "Submit");
 form.appendChild(inputButtom);
 
-//----------------------------------------------MODAL
+//MODAL
 
 let modalEmail = document.createElement("div");
 modalEmail.setAttribute("id", "modalEmail");
@@ -531,9 +530,6 @@ closeModal.setAttribute("class", "close");
 closeModal.setAttribute("type", "text");
 closeModal.innerHTML = "X"
 modalDiv.appendChild(closeModal);
-
-
-
 
 //MAP
 let mapDiv = document.createElement("div");
@@ -613,9 +609,6 @@ buttonNo.setAttribute("href", "https://www.helpguide.org/articles/addictions/und
 buttonNo.innerHTML = "No"
 buttonsDiv.appendChild(buttonNo);
 
-
-
-
 // APPEDING DIVS TO BODY
 document.body.appendChild(navBarDiv);
 
@@ -628,9 +621,6 @@ section2.setAttribute("id", "about");
 section3.setAttribute("id", "beers");
 section4.setAttribute("id", "contact");
 
-
-
-
 section1.appendChild(heroDiv);
 section1.appendChild(introHide);
 section1.appendChild(slider);
@@ -641,7 +631,6 @@ section3.appendChild(beerContainer);
 section4.appendChild(contactHeadingDiv);
 section4.appendChild(contactContainer);
 
-
 document.body.appendChild(section1);
 document.body.appendChild(section2);
 document.body.appendChild(section3);
@@ -651,9 +640,10 @@ document.body.appendChild(footer);
 document.body.appendChild(modalEmail);
 document.body.appendChild(overAgeModal);
 
+// Modal Check age
 
 document.getElementById("buttonYes").addEventListener('click', () => {
-    document.querySelector('.modalOverAgeContainer').style.display = "none";
+    document.querySelector('.modalOverAgeContainer').classList.add('hideModal');
 })
 
 document.getElementById("buttonNo").addEventListener('click', () => {
@@ -662,7 +652,7 @@ document.getElementById("buttonNo").addEventListener('click', () => {
 
 
 
-//BUTTONS BEER APPAER/DESAPPEAR
+//Button beers appear/disappear
 
 let pickLager = document.getElementById("lagerDiv");
 let choseLager = document.getElementById("lagerShowUpDiv");
@@ -705,6 +695,7 @@ pickIpa.addEventListener("click", () => {
     IpaBlackWhite.style.position = "revert";
 });
 
+// Burguer Navbar
 const navSlide = () => {
     const burguer = document.querySelector('.burguer');
     const nav = document.querySelector('.navLinks');
@@ -718,9 +709,10 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
     })
 }
-
 navSlide();
 
+
+// Animation when load the page
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}})
 
 tl.to(".text", { y: "0%", duration: 1.5, delay: 1.0, stagger: 0.25 });
