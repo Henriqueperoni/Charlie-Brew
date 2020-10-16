@@ -609,6 +609,7 @@ buttonNo.setAttribute("href", "https://www.helpguide.org/articles/addictions/und
 buttonNo.innerHTML = "No"
 buttonsDiv.appendChild(buttonNo);
 
+
 // APPEDING DIVS TO BODY
 document.body.appendChild(navBarDiv);
 
@@ -640,16 +641,25 @@ document.body.appendChild(footer);
 document.body.appendChild(modalEmail);
 document.body.appendChild(overAgeModal);
 
+//SOUND EFFECT
+
+const beerPouring = new Audio('assets/images/beer-pouring.mp3')
+
+function startAudio() {
+    beerPouring.play();
+};
+
 // Modal Check age
+
 
 document.getElementById("buttonYes").addEventListener('click', () => {
     document.querySelector('.modalOverAgeContainer').classList.add('hideModal');
+    startAudio();
 })
 
 document.getElementById("buttonNo").addEventListener('click', () => {
     window.open("https://www.helpguide.org/articles/addictions/underage-drinking.htm");
 })
-
 
 
 //Button beers appear/disappear
